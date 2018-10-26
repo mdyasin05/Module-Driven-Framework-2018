@@ -2,7 +2,7 @@ package locators;
 
 public class Locator_Class {
 	
-	public String MyAcc = "//*[@id=\'li_myaccount\']/a";
+	public String MyAcc = "//*[@id=\"li_myaccount\"]/a";
 	
 	public String click_Signup = "//*[@id=\'li_myaccount\']/ul/li[2]/a";
 	
