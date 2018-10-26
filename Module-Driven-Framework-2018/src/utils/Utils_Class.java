@@ -9,6 +9,9 @@ public class Utils_Class {
 	public void typebyxpath(String loc, String val) {
 		driver.findElement(By.xpath(loc)).sendKeys(val);	
 	}
+	public void typebyxpath1(String loc, String val) {
+		driver.findElement(By.xpath(loc)).sendKeys(val);	
+	}
 	
 	public void typebycssSelector(String loc, String val) {
 		driver.findElement(By.xpath(loc)).sendKeys(val);
