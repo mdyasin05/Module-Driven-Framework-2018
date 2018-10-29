@@ -1,6 +1,8 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -9,14 +11,26 @@ import utils.UtilityClass;
 public class Configs extends UtilityClass{
 	public WebDriver driver;
 	
-	@BeforeTest
+	String  browser = "ch";
 	
-	public void beforetest(){
+	
+	@BeforeTest
+	public  void openChromeDriver(){
+    	
+		if(browser.equalsIgnoreCase("ch"))
+		{	
+    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\tmcon\\workspace\\jar file\\chromedriver_win32\\chromedriver.exe");
+    	driver=new ChromeDriver();
+    	driver.get("https://www.phptravels.net/");}
 		
-		openChromeDriver("https://www.phptravels.net/");
-		maxpage();
-		Bywait(100);
+		else {
+			System.out.println("Please verify the Home page...........");
+		}
+	
 		
+		
+	
+
 		
 		
 	}
