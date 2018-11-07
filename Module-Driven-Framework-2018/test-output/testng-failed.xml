@@ -6,7 +6,8 @@
       <class name="testAll.Login_Functionality_Testing">
         <methods>
           <include name="loginFunction"/>
-          <include name="Setup"/>
+          <include name="aftertest"/>
+          <include name="openChromeDriver"/>
         </methods>
       </class> <!-- testAll.Login_Functionality_Testing -->
     </classes>

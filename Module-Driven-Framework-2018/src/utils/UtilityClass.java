@@ -151,6 +151,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		dd5.deselectByVisibleText(value);
 	}
 
+	//================================dropdown===========================================
+	
+	public void dropdownusingValue(String loc,String value){
+		WebElement selectelements=driver.findElement(By.xpath(loc));
+		Select dropdown=new Select (selectelements);
+		dropdown.selectByVisibleText(value);
+	}
+	public void dropdownByIndex(String loc,int x){
+		WebElement choseelement=driver.findElement(By.id(loc));
+		Select dropdown=new Select(choseelement);
+		dropdown.selectByIndex(x);
+	}
 
 
 
